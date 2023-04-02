@@ -4,7 +4,7 @@
 
 <template>
   <nav class="doc-style fixed-bottom glass d-flex justify-content-around align-items-center start-50 translate-middle ">
-      <RouterLink  to="/features"><i class="bi bi-gear-fill icon animate__animated animate__bounce"></i></RouterLink>
+      <RouterLink  to="/features"><i class="bi bi-app-indicator icon"></i></RouterLink>
       <RouterLink  to="/versions"><i class="bi bi-git icon "></i></RouterLink>
       <RouterLink  to="/"><i class="bi bi-circle-fill icon "></i></RouterLink>
       <RouterLink  to="/faq"><i class="bi bi-question-circle-fill icon "></i></RouterLink>
@@ -22,7 +22,7 @@
 
 .icon {
   font-size: 2rem; 
-  animation: icon-animate-down 0.1s ease-in-out;
+  animation: icon-animate-down 0.5s ease-in-out;
 }
 
 /* .icon:hover {
@@ -58,7 +58,7 @@
 nav a.router-link-exact-active .icon {
   color: var(--color-icon-active);
   font-size: 3rem; 
-  animation: icon-animate-up 0.1s ease-in-out;
+  animation: icon-animate-up 0.5s ease-in-out;
 }
 
 nav a.router-link-exact-active {
