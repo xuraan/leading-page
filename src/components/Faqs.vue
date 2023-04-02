@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import AccordionItem from './AccordionItem.vue'
 import Section from './Section.vue'
+import { local } from '@/stores/local'
+
 </script>
 
 <template>
     <Section id="faq">
         <template #title>
-            <h2>Frequently Asked Questions</h2>
+            <h2>{{ local.strings.faqs }}</h2>
             <p>
                 Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                 consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
@@ -15,7 +17,7 @@ import Section from './Section.vue'
         </template>
         <template #body>
             <div class="row no-gutters">
-                <div class="col-xl-7 d-flex align-items-stretch order-2 order-lg-1">
+                <div class="col-xl-7 d-flex align-items-stretch order-2 order-lg-1 animate__animated animate__fadeInUp">
                     <div class="accordion col-12" id="accordionExample">
                         <AccordionItem id="1" title="Qui es-tu?" body="moussa" parent-id="accordionExample" />
                         <AccordionItem id="2" title="Qui es-tu?" body="moussa" parent-id="accordionExample" />
@@ -31,7 +33,7 @@ import Section from './Section.vue'
                 </div>
                 <div class="image col-xl-5 d-flex align-items-stretch justify-content-center order-1 order-lg-2"
                     data-aos="fade-left" data-aos-delay="100">
-                    <img src="@/assets/img/features.svg" class="img-fluid" alt="" />
+                    <img src="@/assets/img/features.svg" class="img-fluid animate__animated animate__fadeInRight" alt="" />
                 </div>
             </div>
         </template>

@@ -12,7 +12,6 @@ import Topbar from './components/Topbar.vue';
       <HelloWorld msg="You did it!" />
     </div>
   </header> -->
-  <!-- <Topbar /> -->
   <RouterView />
   <Navbar />
 

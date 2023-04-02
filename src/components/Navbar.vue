@@ -3,12 +3,12 @@
 </script>
 
 <template>
-  <nav class="doc-style fixed-bottom glass d-flex justify-content-around align-items-center start-50 translate-middle">
-      <RouterLink  to="/features"><i class="bi bi-gear-fill icon "></i></RouterLink>
+  <nav class="doc-style fixed-bottom glass d-flex justify-content-around align-items-center start-50 translate-middle ">
+      <RouterLink  to="/features"><i class="bi bi-gear-fill icon animate__animated animate__bounce"></i></RouterLink>
       <RouterLink  to="/versions"><i class="bi bi-git icon "></i></RouterLink>
       <RouterLink  to="/"><i class="bi bi-circle-fill icon "></i></RouterLink>
       <RouterLink  to="/faq"><i class="bi bi-question-circle-fill icon "></i></RouterLink>
-      <RouterLink  to="/contacts"><i class="bi bi-phone-fill icon "></i></RouterLink>
+      <RouterLink  to="/contacts"><i class="bi bi-person-vcard-fill icon "></i></RouterLink>
   </nav>
 </template>
 
@@ -17,7 +17,7 @@
   width: 300px;
   height: 50px;
   border-radius: 20px;
-  bottom: -20px;
+  bottom: -10px;
 }
 
 .icon {

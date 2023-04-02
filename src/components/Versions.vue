@@ -2,19 +2,21 @@
 import Version from './Version.vue'
 import Section from './Section.vue'
 import ToolingIcon from './icons/IconTooling.vue'
+import { local } from '@/stores/local'
+
 </script>
 
 <template>
     <Section id="versions">
         <template #title>
-            <h2>App Versions</h2>
+            <h2>{{local.strings.versions}}</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                 consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
                 sit in iste officiis commodi quidem hic quas.</p>
         </template>
         <template #body>
             <div class="row no-gutters">
-                <div class="col-xl-7 d-flex align-items-stretch order-2 order-lg-1">
+                <div class="col-xl-7 d-flex align-items-stretch order-2 order-lg-1 animate__animated animate__fadeInUp">
                     <div class="content d-flex flex-column justify-content-center">
                         <div class="row">
                             <Version>
@@ -62,7 +64,7 @@ import ToolingIcon from './icons/IconTooling.vue'
                 </div>
                 <div class="image col-xl-5 d-flex align-items-stretch justify-content-center order-1 order-lg-2"
                     data-aos="fade-left" data-aos-delay="100">
-                    <img src="@/assets/img/features.svg" class="img-fluid" alt="" />
+                    <img src="@/assets/img/features.svg" class="img-fluid animate__animated animate__fadeInRight" alt="" />
                 </div>
             </div>
         </template>

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { local } from '@/stores/local'
+
 </script>
 
 <template>
@@ -7,9 +9,9 @@
             <div class="row">
                 <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-lg-0 order-2 order-lg-1"
                     data-aos="fade-up">
-                    <div>
-                        <h1 class="mb-3">App landing page template</h1>
-                        <h2 class="mb-2">
+                    <div class="animate__animated animate__fadeInUp">
+                        <h1 class="mb-3">{{ local.strings.app_name }}</h1>
+                        <h2 class="mb-2 animate__animated animate__fadeInLeft">
                             Lorem ipsum dolor sit amet, tota senserit percipitur ius ut, usu et fastidii
                             forensibus voluptatibus. His ei nihil feugait percipitur sa la vie.
                         </h2>
@@ -22,7 +24,7 @@
                 </div>
                 <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img"
                     data-aos="fade-up">
-                    <img src="@/assets/img/icon.svg" class="img-fluid" alt="" />
+                    <img src="@/assets/img/icon.svg" class="img-fluid animate__animated animate__fadeInRight" alt="" />
                 </div>
             </div>
         </div>

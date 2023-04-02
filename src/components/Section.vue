@@ -5,11 +5,11 @@ defineProps<{ class?: string, id?: string }>()
 
 <template>
     <div :id="id" class="min-vh-100 d-flex align-items-center">
-        <div class="container">
-            <div class="section-title">
+        <div class="container py-5">
+            <div class="section-title animate__animated animate__fadeInDown">
                 <slot name="title"></slot>
             </div>
-            <div class="section-body"><slot name="body"></slot></div>
+            <div class="section-body pb-1"><slot name="body"></slot></div>
         </div>
     </div>
 </template>
@@ -17,5 +17,6 @@ defineProps<{ class?: string, id?: string }>()
 <style scoped>
 section {
     min-height: 100vh;
+    padding-bottom: 200px;
 }
 </style>

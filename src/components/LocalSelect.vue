@@ -1,35 +1,28 @@
 <template>
-    <div class="input-group mb-3 select  ">
-        <span class="input-group-text  glass" id="basic-addon1">
-            <i class="bi bi-globe"></i>
-        </span>
-        <!-- <select id="language-select" :value="store.local" @change="store.updateLocal($event.target?.value)">
-      </select> -->
-        <select v-model="store.local" class="form-select form-select-sm glass btn-p" aria-label=".form-select-sm example">
-            <option v-for="local in store.locals" :value="local.id">
-                {{ local.name }} {{ local.flag }}
-            </option>
-        </select>
+    <div class="input-group mb-3 select animate__animated animate__fadeInDown">
+      <span class="input-group-text" id="basic-addon1">
+        <i class="bi bi-translate"></i>
+      </span>
+      <select v-model="localStore.local" class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option v-for="local in LOCALS" :value="local" >
+          {{ local.flag }}
+        </option>
+      </select>
     </div>
-</template>
+  </template>
   
-<script setup lang="ts">
-import { useLocalStore } from '@/stores/local';
-
-const store = useLocalStore()
-
-console.log(6)
-console.log(store.local?.id)
-
-</script>
-
-
-
-
-
-<style scoped>
-    .select {
-       width: 170px;
-       padding-top: 25px;;
-    }
-</style>
+  <script setup lang="ts">
+  import { useLocalStore } from '@/stores/local'
+  import { LOCALS } from '@/helper/constants'
+  
+  const localStore = useLocalStore()
+  </script>
+  
+  <style scoped>
+  .select {
+    width: 110px;
+    padding-top: 25px;
+    margin-right: 25px;
+  }
+  </style>
+  
